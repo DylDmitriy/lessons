@@ -1,1 +1,2 @@
-print("Hello")
+print(__builtins__)
+
