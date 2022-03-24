@@ -9,4 +9,3 @@ for i in range(0, size):
         # вывод пирамиды из звёздочек
         print("*", end=' ')
     print(" ")
-
