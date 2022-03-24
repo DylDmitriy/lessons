@@ -1,24 +1,12 @@
-a = 123
-if a == 123:
-    print(321)
-else:
-    print(none)
+b = input("Введите высоту фигуры:")
+size = int(b)
+m = (2 * size) - 2
+for i in range(0, size):
+    for j in range(0, m):
+        print(end=" ")
+    m = m - 1 # уменьшение m после каждого прохода цикла
+    for j in range(0, i + 1):
+        # вывод пирамиды из звёздочек
+        print("*", end=' ')
+    print(" ")
 
-def reverse_number(n):
-    r = 0
-    while n > 0:
-        r *= 10
-        r += n % 10
-        n /= 10
-    return r
-
-
-
-
-
-
-
-
-
- result= reverse_number(123)
-print(result)
