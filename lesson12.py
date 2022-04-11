@@ -12,4 +12,4 @@ def checkio(number: int) -> int:
 
 if __name__ == '__main__':
     print('Example:')
-    print(checkio(123405))
+    print(checkio(12344565))
