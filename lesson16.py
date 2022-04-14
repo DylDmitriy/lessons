@@ -23,7 +23,6 @@ while a == 0:
         a += 2
 
 
-
 beg = datetime.strptime(str('00:05:00'), '%H:%M:%S')
 end = datetime.strptime(str('00:00:00'), '%H:%M:%S')
 step = timedelta(seconds=1)
