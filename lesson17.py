@@ -18,4 +18,3 @@ while beg != end:
     beg = beg - step
     print(str(beg).split()[1])
     time.sleep(1)
-
