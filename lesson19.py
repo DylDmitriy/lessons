@@ -11,12 +11,10 @@ def login(func):
         return False
     return wrapper
 @login
-def authenticate() -> bool:
-    if login:
-        return False
+def authenticate(account_login, account_password) -> bool:
     return True
 def check_password(account_login: str, account_password: str) -> bool:
-    return global_dict.get(account_login, None) == account_password
+    return global_dict.get(account_login) == account_password
 def one_more_time():
     for i in range(4):
         global just_x
@@ -28,7 +26,7 @@ def one_more_time():
             print("Не правильное Имя или Пароль"
                   "\n" f"У Вас осталось {3 - i} попыток")
         elif i == 3:
-            print("На этом все")
+            print("Вы не прошли")
 def from_terminal(account_login, account_password):
     if just_x == 0:
         if account_login == 0:
